@@ -1,30 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     const text = 'Are you awesome?';
+    const condition = true;
+    const style = {
+      backgroundColor: 'gray',
+      border: '1px solid black',
+      width: Math.round(Math.random()*300)+50,
+      height: Math.round(Math.random()*300)+50,
+      transition:'all'
+    };
     return (
-      // <div className="App">
-      //   <header className="App-header">
-      //     <img src={logo} className="App-logo" alt="logo" />
-      //     <p>
-      //       Edit <code>src/App.js</code> and save to reload.
-      //     </p>
-      //     <a
-      //       className="App-link"
-      //       href="https://reactjs.org"
-      //       target="_blank"
-      //       rel="noopener noreferrer"
-      //     >
-      //       Learn React
-      //     </a>
-      //   </header>
-      // </div>
-      <div>
+      <div className="my-div">
         <h1>hello react!</h1>
         <h2>{text}</h2>
+        {condition && 'shows it, please'}
+        <div style={style}></div>
       </div>
     );
   }
