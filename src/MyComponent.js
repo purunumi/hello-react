@@ -21,8 +21,8 @@ class MyComponent extends Component {
 
     render() {
         return (
-            <div>
-                <h1>component practice</h1>
+            <div className="wrap-practice">
+                <h1 className="title-h1">component practice</h1>
                 <p>hello, my name is {this.props.name}.</p>
                 <p>I'm {this.props.age} years old.</p>
                 <p>number: {this.state.number}</p>

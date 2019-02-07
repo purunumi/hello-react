@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import MyComponent from './MyComponent';
 import EventPractice from './EventPractice';
+import ValidationSample from './ValidationSample';
+import ScrollBox from './ScrollBox';
 import PropTypes from 'prop-types';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -9,6 +12,9 @@ class App extends Component {
       <div>
         <MyComponent name="React" age={4} />
         <EventPractice />
+        <ValidationSample />
+        <ScrollBox ref={(ref)=>this.scrollBox=ref} />
+        <button onClick={()=>this.scrollBox.scrollToBottom()}>to Bottom</button>
       </div>
     );
   }

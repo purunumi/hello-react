@@ -48,8 +48,8 @@ class EventPractice extends Component {
 
     render() {
         return (
-            <div>
-                <h1>event practice</h1>
+            <div className="wrap-practice">
+                <h1 className="title-h1">event practice</h1>
                 <input
                     type="text"
                     name="username"
